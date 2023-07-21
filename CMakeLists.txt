@@ -8,10 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_COMPILER clang++)
 
 # Add source files
-file(GLOB_RECURSE SOURCE_FILES "${CMAKE_SOURCE_DIR}/*.cpp" EXCLUDE "${CMAKE_SOURCE_DIR}/CMakeFiles/**/*.cpp")
+file(GLOB_RECURSE SOURCE_FILES "${CMAKE_SOURCE_DIR}/source/*.cpp")
 
 # Define the target executable
 add_executable(dhc ${SOURCE_FILES})
 
 # Add include directories
-target_include_directories(dhc PRIVATE ${CMAKE_SOURCE_DIR}/../libraries)
+target_include_directories(dhc PRIVATE ${CMAKE_SOURCE_DIR}/libraries)
