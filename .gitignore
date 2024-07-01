@@ -33,6 +33,7 @@
 
 # Build files
 build
+.xmake
 
 # IDE Configurations
 .vscode
